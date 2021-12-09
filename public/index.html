@@ -5,15 +5,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Growdevers</title>
+    <title>Spearow Invaders</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Bem vindo!</h1>
-    <ul id="lista"></ul>
 
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="./api.js"></script>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col d-flex flex-column">
+                <h1 onclick="goToIndex()" class="text-center textPressStart textLink">Spearow Invaders</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row d-flex flex-column align-items-center">
+            <div class="" id="playArea" style="display: none;">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3" id="settings" style="display: none;">
+        <div class="row d-flex flex-column align-items-center">
+            <div class="d-flex flex-column align-items-center" id="">
+
+                <h2 class="h3 textPressStart text-center mt-3">Controls</h2>
+                <div class="d-flex">
+
+                    <div class="d-flex flex-column me-3 ms-4" style="align-items: start;">
+                        <h3 class="h6 textPressStart text-center">Left:</h3>
+                        <h3 class="h6 textPressStart text-center">Right:</h3>
+                        <h3 class="h6 textPressStart text-center">Shoot:</h3>
+                    </div>
+                    <div>
+                        <h3 class="h6 textPressStart text-center">'←' and 'a' </h3>
+                        <h3 class="h6 textPressStart text-center">'→' and 'd' </h3>
+                        <h3 class="h6 textPressStart text-center">'↑', 'space' and 'w' </h3>
+                    </div>
+                </div>
+                <h2 class="h3 textPressStart text-center mt-5">Music</h2>
+                <audio controls autoplay loop>
+                    <source src="/public/msc/music.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <button type="button" class="btn btn-outline-dark mt-5" onclick="goToIndex()"> Back </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="buttons" class="container text-center  justify-content-around" style="display: flex;">
+        <div class="row" style="width:250px;">
+            <div class="col-12 mt-5" id="buttonsBG">
+                <button type="button" class="btn btn-outline-dark" onclick="goToSettings()">Settings</button>
+                <br>
+                <br>
+                <button type="button" class="btn btn-outline-dark" onclick="startGame()"> Start </button>
+            </div>
+        </div>
+    </div>
+    <!-- author -->
+    <div class="container align" id="author">
+        <div class="row" style="width:100vw;">
+            <div class="col d-flex flex-column align-items-center textPressStart">
+                <h2 class="h6  d-flex align-items-end">Crhistian de Oliveira, 2021.
+                    <a href="https://copyleft.org/"><img class="socialIcon ms-1" src="img/copyleft.png"
+                            alt="copyleft"></a>
+                    <a href="https://github.com/Crhist0"><img class="socialIcon ms-3" src="img/github-icon.png"
+                            alt="github"></a>
+                    <a href="https://www.linkedin.com/in/crhistian-de-oliveira-b35841161/"><img class="socialIcon ms-3"
+                            src="img/linkedin-icon.png" alt="linkedin"></a>
+                </h2>
+
+                <h3 class="h6   ">
+                    The images and it's rights belong to
+                    <a href="https://www.pokemon.com">The Pokémon Company</a>.
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- scripts -->
+    <!-- sweetAlert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <!-- main -->
+    <script src="./js/api.js"></script>
 </body>
 
 </html>

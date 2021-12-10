@@ -7,8 +7,8 @@
 
 #playArea {
     padding: 0;
-    width: 310px; /* 10px a mais pela borda de 5px */
-    height: 310px;
+    width: 460px; /* 10px a mais pela borda de 5px */
+    height: 460px;
     border-width: 5px;
     border-style: outset;
     border-color: black;
@@ -22,32 +22,32 @@
 }
 
 .spot {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
 }
 
 .pikachu {
     background-image: url(../img/pikachu.png);
     background-position: bottom;
-    background-size: 35px; /* pq 35 se o tamanho do spot é 20x20? */
+    background-size: 52px; /* pq 52 se o tamanho do spot é 20x20? */
 }
 
 .spearow {
     background-image: url(../img/spearow.png);
     background-position: bottom;
-    background-size: 35px; /* pq 35 se o tamanho do spot é 20x20? */
+    background-size: 52px; /* pq 52 se o tamanho do spot é 20x20? */
 }
 
 .shot {
     background-image: url(../img/raio.png);
     background-position: center;
-    background-size: 85px;
+    background-size: 100px;
 }
 
 .hit {
     background-image: url(../img/hit.png);
     background-position: bottom;
-    background-size: 35px;
+    background-size: 52px;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");

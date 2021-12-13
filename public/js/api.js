@@ -126,7 +126,7 @@ function colisionTest() {
                 imageAlt: "Oh não!",
                 showDenyButton: true,
                 confirmButtonText: "Tentar novamente",
-                denyButtonText: "Voltar",
+                denyButtonText: "Voltar ao menu",
             }).then((result) => {
                 if (result.isConfirmed) {
                     goToIndex();
@@ -150,7 +150,7 @@ function colisionTest() {
                 imageAlt: "Oh não!",
                 showDenyButton: true,
                 confirmButtonText: "Tentar novamente",
-                confirmButtonText: "Voltar",
+                denyButtonText: "Voltar ao menu",
             }).then((result) => {
                 if (result.isConfirmed) {
                     goToIndex();
@@ -215,7 +215,7 @@ function winCheck() {
             imageAlt: "Parabéns!",
             confirmButtonText: "Jogar novamente",
             showDenyButton: true,
-            denyButtonText: "Voltar",
+            denyButtonText: "Voltar ao menu",
         }).then((result) => {
             if (result.isConfirmed) {
                 goToIndex();
